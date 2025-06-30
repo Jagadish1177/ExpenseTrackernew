@@ -1,8 +1,8 @@
 # Use an OpenJDK base image
-FROM openjdk:17-jdk-slim
+FROM openjdk:21
 
 # Copy built JAR file
-COPY target/backend-app.jar /app.jar
+COPY target/expense-tracker-app-0.0.1-SNAPSHOT.jar /app.jar
 
 EXPOSE 8080
 
